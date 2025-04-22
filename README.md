@@ -53,7 +53,7 @@ school-management-api
 ### Add School
 - **Endpoint:** `/addSchool`
 - **Method:** `POST`
-- **Payload:** 
+- **Payload:**
   ```json
   {
     "name": "School Name",
@@ -62,17 +62,17 @@ school-management-api
     "longitude": 98.765432
   }
   ```
-- **Response:** 
+- **Response:**
   - Success: `201 Created`
   - Error: `400 Bad Request` (if validation fails)
 
 ### List Schools
 - **Endpoint:** `/listSchools`
 - **Method:** `GET`
-- **Parameters:** 
+- **Parameters:**
   - `latitude`: User's latitude
   - `longitude`: User's longitude
-- **Response:** 
+- **Response:**
   - Success: `200 OK` with a sorted list of schools
   - Error: `400 Bad Request` (if parameters are missing)
 
@@ -81,12 +81,3 @@ Run the tests using the following command:
 ```
 npm test
 ```
-
-## Hosting
-The API can be deployed on any suitable hosting service that supports Node.js applications.
-
-## Postman Collection
-A Postman collection will be provided for testing the APIs, including example requests and expected responses.
-
-## License
-This project is licensed under the MIT License.
